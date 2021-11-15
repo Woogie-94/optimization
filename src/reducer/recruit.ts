@@ -6,12 +6,9 @@ import { REQUEST_STATE, getRecruitDataPayload, recruitSliceState } from '../type
 export const getRecruitData = createAsyncThunk(
 	'getRecruitData',
 	async ({ order, sortValue, stacks = [] }: getRecruitDataPayload) => {
-		const response = await axios.post(
-			`${process.env.REACT_APP_SERVER_URL}/filterRecruitList/${order}/${sortValue || '최신순'}`,
-			{
-				searchStacksList: stacks,
-			},
-		);
+		const response = await axios.post(`http://localhost:4000/filterRecruitList/${order}/${sortValue || '최신순'}`, {
+			searchStacksList: stacks,
+		});
 		return response.data;
 	},
 );
