@@ -1,29 +1,35 @@
 @font-face {
 	font-family: 'NanumSquareL';
+	font-display: block;
 	src: url('./fonts/NanumSquareL.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'NanumSquareR';
+	font-display: block;
 	src: url('./fonts/NanumSquareR.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'NanumSquareB';
+	font-display: block;
 	src: url('./fonts/NanumSquareB.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'NanumSquareEB';
+	font-display: block;
 	src: url('./fonts/NanumSquareEB.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'Pacifico';
+	font-display: block;
 	src: url('./fonts/Pacifico-Regular.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'BMJua';
+	font-display: block;
 	src: url('./fonts/BMJUA.otf') format('opentype');
 }

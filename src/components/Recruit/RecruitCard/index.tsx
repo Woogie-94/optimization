@@ -24,10 +24,11 @@ interface Props {
 
 const RecruitCard = ({ data, observeTarget }: Props): JSX.Element => {
 	const { id, name, simpleDesc, commentCount, view, requireStack, uploadImage, createdAt, writer } = data;
+	const test = `${uploadImage.split('.')[0]}.webp`;
 	return (
 		<CardContainer to={`/recruit/${id}`} ref={observeTarget}>
 			<CardImgContainer>
-				<img src={`${process.env.REACT_APP_SERVER_URL}/images/${uploadImage}`} />
+				<img src={`${process.env.REACT_APP_SERVER_URL}/images/${test}`} />
 			</CardImgContainer>
 			<CardInfoContainer>
 				<CardInfoTitle>{name}</CardInfoTitle>
