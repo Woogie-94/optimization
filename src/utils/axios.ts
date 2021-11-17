@@ -1,7 +1,7 @@
 import axios, { Method } from 'axios';
 import getLoginInfo from './getLoginInfo';
 
-const serverURL = `https://localhost:4000`;
+const serverURL = `http://localhost:4000`;
 
 export const axiosRequest = async <D>(method: Method, endPoint: string, data?: D): Promise<D | void> => {
 	const { accessToken, loginType } = getLoginInfo();
