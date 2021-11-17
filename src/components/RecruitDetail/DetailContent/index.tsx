@@ -20,7 +20,8 @@ import {
 
 const DetailContent = (): JSX.Element => {
 	const { data } = useSelector(getRecruitDetailSelector);
-
+	console.log(data);
+	console.log(data.recruitMembers);
 	return (
 		<DetailContentContainer>
 			<DetailSubTitle>{data.detailTitle}</DetailSubTitle>

@@ -61,7 +61,9 @@ const LoginModal = (): JSX.Element => {
 			window.localStorage.setItem('location', `${history.location.pathname}${history.location.search}`);
 
 			if (type === 'google') {
-				window.location.assign(`${process.env.REACT_APP_GOOGLE_LOGIN_URL}`);
+				window.location.assign(
+					`https://accounts.google.com/o/oauth2/auth?client_id=399420936944-704duo9e92m3kqmpfom8hv1qcgpa9inf.apps.googleusercontent.com&redirect_uri=http://https://optmization.d2tqcj2zwv4epr.amplifyapp.com/loginloading&response_type=code&scope=https://www.googleapis.com/auth/userinfo.email&approval_prompt=force&access_type=offline`,
+				);
 			}
 			if (type === 'github') {
 				window.location.assign(`${process.env.REACT_APP_GITHUB_LOGIN_URL}`);
