@@ -66,7 +66,7 @@ const LoginModal = (): JSX.Element => {
 				);
 			}
 			if (type === 'github') {
-				window.location.assign(`${process.env.REACT_APP_GITHUB_LOGIN_URL}`);
+				window.location.assign(`https://github.com/login/oauth/authorize?client_id=d84f63fed183699f3b1d`);
 			}
 			if (type === 'email') {
 				onSubmitEmail();
