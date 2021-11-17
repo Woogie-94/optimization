@@ -1,13 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 
-const test = keyframes`
-	100% {
-		background-position:
-			100% 0,
-			0 0;
-	}
-`;
-
 export const SkeletonContainer = styled.div`
 	overflow: hidden;
 	width: 410px;
@@ -32,7 +24,6 @@ const SkeletonItem = styled.div`
 		),
 		linear-gradient(#d6d6d8 0, transparent 0);
 
-	animation: ${test} 1s infinite linear;
 	border-radius: 3px;
 `;
 
