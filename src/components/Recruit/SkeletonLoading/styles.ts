@@ -1,5 +1,11 @@
 import styled, { keyframes } from 'styled-components';
 
+const test = keyframes`
+	100% {
+		transform: translate(200%) rotate(0);
+	}
+`;
+
 export const SkeletonContainer = styled.div`
 	overflow: hidden;
 	width: 410px;
@@ -14,17 +20,32 @@ export const SkeletonContent = styled.div`
 `;
 
 const SkeletonItem = styled.div`
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
 	background-color: #d6d6d8;
-	background-repeat: repeat-x;
-	background-image: linear-gradient(
-			100deg,
-			rgba(255, 255, 255, 0.3),
-			rgba(255, 255, 255, 0.4) 80%,
-			rgba(255, 255, 255, 0.3) 90%
-		),
-		linear-gradient(#d6d6d8 0, transparent 0);
-
 	border-radius: 3px;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(
+				90deg,
+				rgba(255, 255, 255, 0) 0%,
+				rgba(255, 255, 255, 0.15) 80%,
+				rgba(255, 255, 255, 0.1) 90%
+			),
+			linear-gradient(#d6d6d8 0, transparent 0);
+
+		transform: translateX(0%) rotate(0);
+		animation: ${test} 1.5s infinite linear;
+	}
 `;
 
 export const SkeletonImg = styled(SkeletonItem)`
