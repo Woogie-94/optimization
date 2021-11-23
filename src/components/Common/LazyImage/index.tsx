@@ -12,8 +12,8 @@ const LazyImage = ({ src, alt }: Props): JSX.Element => {
 	const onLoadImg = useCallback(
 		([entry]: IntersectionObserverEntry[], observer: IntersectionObserver) => {
 			if (!entry.isIntersecting || !observeTarget.current) return;
-
 			observer.unobserve(entry.target);
+
 			observeTarget.current.src = observeTarget.current.dataset.src as string;
 			observeTarget.current.alt = alt;
 			observeTarget.current.classList.remove('lazy');
@@ -36,7 +36,7 @@ export default LazyImage;
 const Img = styled.img`
 	&.lazy {
 		width: 100%;
-		height: 150px;
+		height: 100%;
 		background-color: #d6d6d8;
 	}
 `;
