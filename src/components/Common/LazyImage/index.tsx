@@ -35,7 +35,8 @@ export default LazyImage;
 
 const Img = styled.img`
 	&.lazy {
-		height: 100%;
+		width: 100%;
+		height: 150px;
 		background-color: #d6d6d8;
 	}
 `;
