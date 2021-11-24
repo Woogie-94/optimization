@@ -1,35 +1,40 @@
 @font-face {
 	font-family: 'NanumSquareL';
-	font-display: block;
-	src: url('./fonts/NanumSquareL.otf') format('opentype');
+	font-display: fallback;
+	src: url('./fonts/NanumSquareL.woff') format('woff'), url('./fonts/NanumSquareL.ttf') format('ttf'),
+		url('./fonts/NanumSquareL.otf') format('otf');
 }
 
 @font-face {
 	font-family: 'NanumSquareR';
-	font-display: block;
-	src: url('./fonts/NanumSquareR.otf') format('opentype'), url('./fonts/NanumSquareR.ttf') format('truetype');
+	font-display: fallback;
+	src: url('./fonts/NanumSquareR.woff') format('woff'), url('./fonts/NanumSquareR.ttf') format('ttf'),
+		url('./fonts/NanumSquareR.otf') format('otf');
 }
 
 @font-face {
 	font-family: 'NanumSquareB';
-	font-display: block;
-	src: url('./fonts/NanumSquareB.otf') format('opentype'), url('./fonts/NanumSquareB.ttf') format('truetype');
+	font-display: fallback;
+	src: url('./fonts/NanumSquareB.woff') format('woff'), url('./fonts/NanumSquareB.ttf') format('ttf'),
+		url('./fonts/NanumSquareB.otf') format('otf');
 }
 
 @font-face {
 	font-family: 'NanumSquareEB';
-	font-display: block;
-	src: url('./fonts/NanumSquareEB.otf') format('opentype'), url('./fonts/NanumSquareEB.ttf') format('truetype');
+	font-display: fallback;
+	src: url('./fonts/NanumSquareEB.woff') format('woff'), url('./fonts/NanumSquareEB.ttf') format('ttf'),
+		url('./fonts/NanumSquareEB.otf') format('otf');
 }
 
 @font-face {
 	font-family: 'Pacifico';
-	font-display: block;
+	font-display: fallback;
 	src: url('./fonts/Pacifico-Regular.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'BMJua';
-	font-display: block;
-	src: url('./fonts/BMJUA.otf') format('opentype');
+	font-display: fallback;
+	src: url('./fonts/BMJUA.woff2') format('woff2'), url('./fonts/BMJUA.woff') format('woff'),
+		url('./fonts/BMJUA.otf') format('otf');
 }
