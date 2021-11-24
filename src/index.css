@@ -1,25 +1,28 @@
 @font-face {
 	font-family: 'NanumSquareL';
 	font-display: fallback;
-	src: url('./fonts/NanumSquareL.ttf') format('ttf');
+	src: url('./fonts/NanumSquareL.woff') format('woff'), url('./fonts/NanumSquareL.ttf') format('truetype'),
+		url('./fonts/NanumSquareL.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'NanumSquareR';
 	font-display: fallback;
-	src: url('./fonts/NanumSquareR.ttf') format('ttf');
+	src: url('./fonts/NanumSquareR.woff') format('woff'), url('./fonts/NanumSquareR.ttf') format('truetype');
 }
 
 @font-face {
 	font-family: 'NanumSquareB';
 	font-display: fallback;
-	src: url('./fonts/NanumSquareB.ttf') format('ttf');
+	src: url('./fonts/NanumSquareB.woff') format('woff'), url('./fonts/NanumSquareB.ttf') format('truetype'),
+		url('./fonts/NanumSquareB.otf') format('opentype');
 }
 
 @font-face {
 	font-family: 'NanumSquareEB';
 	font-display: fallback;
-	src: url('./fonts/NanumSquareEB.ttf') format('ttf');
+	src: url('./fonts/NanumSquareEB.woff') format('woff'), url('./fonts/NanumSquareEB.ttf') format('truetype'),
+		url('./fonts/NanumSquareEB.otf') format('opentype');
 }
 
 @font-face {
@@ -32,5 +35,5 @@
 	font-family: 'BMJua';
 	font-display: fallback;
 	src: url('./fonts/BMJUA.woff2') format('woff2'), url('./fonts/BMJUA.woff') format('woff'),
-		url('./fonts/BMJUA.otf') format('otf');
+		url('./fonts/BMJUA.otf') format('opentype');
 }
