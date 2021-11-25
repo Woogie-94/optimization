@@ -40,7 +40,7 @@ const LandingFirst = (): JSX.Element => {
 			<LandingFirstContainer
 				ref={BackToTopRef}
 				style={{
-					background: `no-repeat center/cover url(http://localhost:4000/images/LandingMain2.jpg)`,
+					background: `no-repeat center/cover url(http://localhost:4000/images/LandingMain2.webp)`,
 				}}
 			>
 				<Dimed>

@@ -28,6 +28,7 @@ import {
 	ServiceMenuCalendar,
 	ChatUploadImage,
 } from './styles';
+import LazyImage from '../../Common/LazyImage';
 
 const LandingFifth = (): JSX.Element => {
 	const ChatAnimatedItem = {
@@ -71,7 +72,8 @@ const LandingFifth = (): JSX.Element => {
 				</ServiceMenu>
 				<ServiceContent>
 					<RightComment {...ChatAnimatedItem.firstChat}>
-						<img src={`http://localhost:4000/images/part6-1.svg`} alt="첫번째 채팅 프로필사진" />
+						<LazyImage src={`http://localhost:4000/images/part6-1.svg`} alt="첫번째 채팅 프로필사진" />
+
 						<div>
 							<div>
 								<ChatUserName>Evan</ChatUserName>
@@ -83,7 +85,7 @@ const LandingFifth = (): JSX.Element => {
 						</div>
 					</RightComment>
 					<LeftComment {...ChatAnimatedItem.secondChat}>
-						<img src={`http://localhost:4000/images/part6-2.svg`} alt="두번째 채팅 프로필사진" />
+						<LazyImage src={`http://localhost:4000/images/part6-2.svg`} alt="두번째 채팅 프로필사진" />
 						<div>
 							<div>
 								<ChatUserName>James</ChatUserName>
@@ -96,7 +98,7 @@ const LandingFifth = (): JSX.Element => {
 						</div>
 					</LeftComment>
 					<RightComment {...ChatAnimatedItem.thirdChat}>
-						<img src={`http://localhost:4000/images/part6-3.svg`} alt="세번째 채팅 프로필사진" />
+						<LazyImage src={`http://localhost:4000/images/part6-3.svg`} alt="세번째 채팅 프로필사진" />
 						<div>
 							<div>
 								<ChatUserName>Olivia</ChatUserName>
